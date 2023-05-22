@@ -1,11 +1,12 @@
+"use strict";
 function main() {
     console.log('esercizio typescript numero 1.');
-    var same = numeroGiocatore1 == numeroGiocatore2;
+    let same = numeroGiocatore1 == numeroGiocatore2;
     console.log('Giocatore 1: ' + numeroGiocatore1);
     console.log('Giocatore 2: ' + numeroGiocatore2);
     console.log('numero estratto: ' + numeroEstratto);
     if (same) {
-        var value = numeroGiocatore1;
+        let value = numeroGiocatore1;
         if (value == numeroEstratto) {
             console.log('Vincono Entrambe i giocatori.');
         }
@@ -21,9 +22,9 @@ function main() {
             console.log('Vince il giocatore 2');
         }
         else {
-            var delta1 = Math.abs(numeroEstratto - numeroGiocatore1);
-            var delta2 = Math.abs(numeroEstratto - numeroGiocatore2);
-            var stringa = delta1 < delta2 ? 'giocatore1' : 'giocatore2';
+            let delta1 = Math.abs(numeroEstratto - numeroGiocatore1);
+            let delta2 = Math.abs(numeroEstratto - numeroGiocatore2);
+            let stringa = delta1 < delta2 ? 'giocatore1' : 'giocatore2';
             console.log('si avvicina di più il ' + stringa);
         }
     }
@@ -38,3 +39,4 @@ numeroGiocatore1 = estrai();
 numeroGiocatore2 = estrai();
 numeroEstratto = estrai();
 main();
+//# sourceMappingURL=index.js.map
